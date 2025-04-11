@@ -562,6 +562,30 @@ a:focus {
     line-height: 60px;
     z-index: 3;
 }
+.feature-text {
+    padding: 10px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.anchor-emails1 {
+    color: #007bff;
+    text-decoration: none;
+    word-break: break-all; /* Forces break for long email addresses */
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .feature-text h3 {
+        font-size: 18px;
+    }
+
+    .anchor-emails1 {
+        font-size: 12px;
+        display: inline-block;
+    }
+}
+
 
 .feature .feature-text {
     padding-left: 30px;
@@ -2262,6 +2286,7 @@ a:focus {
  }
  .anchor-emails1{
     color:#fdbe33;
+    text-wrap-mode: nowrap;
  }
  .anchor-emails1:hover{
     color:#fdbe33;
